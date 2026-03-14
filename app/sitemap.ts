@@ -5,7 +5,7 @@ import { getRegisteredCalculatorPaths } from "@/lib/calculators/registry";
 export const dynamic = "force-static";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = "https://www.numerly.com";
+  const base = "https://www.numerly.org";
   const paths = getRegisteredCalculatorPaths();
   const categories = getCategorySummaries();
 

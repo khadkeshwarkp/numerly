@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://www.numerly.com/sitemap.xml"
+    sitemap: "https://www.numerly.org/sitemap.xml"
   };
 }

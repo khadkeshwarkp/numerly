@@ -412,14 +412,14 @@ export function useCalculatorWorkspace(
     const query = params.toString();
     const relative = query ? `${pathname}?${query}` : pathname;
     const origin =
-      typeof window === "undefined" ? "https://www.numerly.com" : window.location.origin;
+      typeof window === "undefined" ? "https://www.numerly.org" : window.location.origin;
 
     return `${origin}${relative}`;
   }, [calculator, effectiveCompareEnabled, effectiveCompareValues, effectivePrimaryValues, pathname]);
 
   const shortUrl = useMemo(() => {
     const origin =
-      typeof window === "undefined" ? "https://www.numerly.com" : window.location.origin;
+      typeof window === "undefined" ? "https://www.numerly.org" : window.location.origin;
     return `${origin}${pathname}`;
   }, [pathname]);
 

@@ -4,7 +4,7 @@ import { AppHeader } from "@/components/layout/AppHeader";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.numerly.com"),
+  metadataBase: new URL("https://www.numerly.org"),
   title: {
     default: "Numerly",
     template: "%s | Numerly"

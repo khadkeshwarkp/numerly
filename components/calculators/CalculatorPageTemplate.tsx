@@ -30,7 +30,7 @@ export function CalculatorPageTemplate({
     internalLinkGroups?.related.length ? internalLinkGroups.related : fallbackLinks;
 
   const calculatorMeta = getCalculatorByRoute(content.category, content.slug);
-  const fullUrl = `https://www.numerly.com/${content.category}/${content.slug}`;
+  const fullUrl = `https://www.numerly.org/${content.category}/${content.slug}`;
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -69,13 +69,13 @@ export function CalculatorPageTemplate({
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.numerly.com/"
+        item: "https://www.numerly.org/"
       },
       {
         "@type": "ListItem",
         position: 2,
         name: content.category[0].toUpperCase() + content.category.slice(1),
-        item: `https://www.numerly.com/${content.category}`
+        item: `https://www.numerly.org/${content.category}`
       },
       {
         "@type": "ListItem",
