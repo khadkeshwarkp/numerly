@@ -1,0 +1,105 @@
+{
+  "id": "inflation-calculator",
+  "category": "finance",
+  "slug": "inflation-calculator",
+  "keyword": "inflation calculator",
+  "seo": {
+    "title": "Inflation Calculator | Numerly",
+    "description": "Estimate future cost, cumulative inflation, and purchasing power loss over time."
+  },
+  "h1": "Inflation Calculator",
+  "intro": "Measure how inflation changes future prices and erodes purchasing power.",
+  "explanation": "This calculator applies compound inflation over years to estimate future amount and purchasing power change.",
+  "formula": {
+    "expression": "Future Cost = Current Amount × (1 + inflation rate)^years",
+    "variables": [
+      {
+        "name": "Current Amount",
+        "meaning": "Price or value today"
+      },
+      {
+        "name": "Inflation Rate",
+        "meaning": "Annual inflation percentage"
+      },
+      {
+        "name": "Years",
+        "meaning": "Projection period"
+      }
+    ]
+  },
+  "example": {
+    "input": "$1,000 current amount, 3% annual inflation, 10 years",
+    "steps": [
+      "Compute inflation factor over 10 years",
+      "Multiply current amount by factor",
+      "Derive purchasing power and value increase"
+    ],
+    "result": "You get future cost, cumulative inflation percentage, and purchasing power estimate."
+  },
+  "faqs": [
+    {
+      "q": "What is cumulative inflation?",
+      "a": "It is total percentage increase in prices across the full period."
+    },
+    {
+      "q": "Does this predict exact CPI?",
+      "a": "No, it projects using a fixed assumed inflation rate."
+    },
+    {
+      "q": "What is purchasing power?",
+      "a": "It estimates how much present money can buy in future terms."
+    },
+    {
+      "q": "Can inflation be zero?",
+      "a": "Yes, then future cost equals current amount."
+    },
+    {
+      "q": "Why use inflation in planning?",
+      "a": "It helps set realistic long-term savings and spending targets."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/finance/retirement-calculator",
+      "label": "Retirement Calculator"
+    },
+    {
+      "href": "/finance/compound-interest-calculator",
+      "label": "Compound Interest Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    }
+  ],
+  "instructions": [
+    "Compute inflation factor over 10 years",
+    "Multiply current amount by factor",
+    "Derive purchasing power and value increase"
+  ],
+  "formulaExplanation": "This calculator applies compound inflation over years to estimate future amount and purchasing power change.",
+  "edgeCases": [
+    "Very long terms can significantly increase interest cost.",
+    "Zero or near-zero rates reduce compounding impact.",
+    "Always verify units (monthly vs annual) before interpreting output."
+  ],
+  "practicalTips": [
+    "Compare at least two scenarios before making decisions.",
+    "Use conservative assumptions for rates and growth.",
+    "Review total cost, not just monthly amount."
+  ],
+  "relatedTopics": [
+    {
+      "href": "/finance/retirement-calculator",
+      "label": "Retirement Calculator"
+    },
+    {
+      "href": "/finance/compound-interest-calculator",
+      "label": "Compound Interest Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    }
+  ]
+}

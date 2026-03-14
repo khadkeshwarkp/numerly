@@ -1,0 +1,105 @@
+{
+  "id": "retirement-calculator",
+  "category": "finance",
+  "slug": "retirement-calculator",
+  "keyword": "retirement calculator",
+  "seo": {
+    "title": "Retirement Calculator | Numerly",
+    "description": "Project retirement corpus using current savings, monthly contributions, and expected annual return."
+  },
+  "h1": "Retirement Calculator",
+  "intro": "Project retirement savings growth from current age to retirement age.",
+  "explanation": "The calculator compounds current savings and recurring monthly contributions at an expected annual return rate.",
+  "formula": {
+    "expression": "Future value combines lump-sum compounding and annuity growth of monthly contributions.",
+    "variables": [
+      {
+        "name": "FV",
+        "meaning": "Retirement corpus at retirement age"
+      },
+      {
+        "name": "r",
+        "meaning": "Monthly return rate"
+      },
+      {
+        "name": "n",
+        "meaning": "Total months until retirement"
+      }
+    ]
+  },
+  "example": {
+    "input": "Age 30 to 65, $25,000 current savings, $750 monthly, 7% return",
+    "steps": [
+      "Compute months to retirement",
+      "Compound current savings monthly",
+      "Add future value of monthly contribution stream"
+    ],
+    "result": "Output includes projected corpus, total contributions, and growth."
+  },
+  "faqs": [
+    {
+      "q": "Is return guaranteed?",
+      "a": "No. Return assumptions are estimates and may vary."
+    },
+    {
+      "q": "Can I use inflation-adjusted return?",
+      "a": "Yes, use a real return assumption if desired."
+    },
+    {
+      "q": "Does this include taxes?",
+      "a": "No, taxes are not modeled in this basic projection."
+    },
+    {
+      "q": "Can I change contribution later?",
+      "a": "This model assumes constant monthly contribution."
+    },
+    {
+      "q": "Why is long horizon powerful?",
+      "a": "More time allows compounding to drive larger growth."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/finance/compound-interest-calculator",
+      "label": "Compound Interest Calculator"
+    },
+    {
+      "href": "/finance/inflation-calculator",
+      "label": "Inflation Calculator"
+    },
+    {
+      "href": "/finance/mortgage-calculator",
+      "label": "Mortgage Calculator"
+    }
+  ],
+  "instructions": [
+    "Compute months to retirement",
+    "Compound current savings monthly",
+    "Add future value of monthly contribution stream"
+  ],
+  "formulaExplanation": "The calculator compounds current savings and recurring monthly contributions at an expected annual return rate.",
+  "edgeCases": [
+    "Very long terms can significantly increase interest cost.",
+    "Zero or near-zero rates reduce compounding impact.",
+    "Always verify units (monthly vs annual) before interpreting output."
+  ],
+  "practicalTips": [
+    "Compare at least two scenarios before making decisions.",
+    "Use conservative assumptions for rates and growth.",
+    "Review total cost, not just monthly amount."
+  ],
+  "relatedTopics": [
+    {
+      "href": "/finance/compound-interest-calculator",
+      "label": "Compound Interest Calculator"
+    },
+    {
+      "href": "/finance/inflation-calculator",
+      "label": "Inflation Calculator"
+    },
+    {
+      "href": "/finance/mortgage-calculator",
+      "label": "Mortgage Calculator"
+    }
+  ]
+}

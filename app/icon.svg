@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Numerly">
+  <rect width="64" height="64" rx="14" fill="#f5f6f8"/>
+  <path d="M14 44V20h6l10 15V20h6v24h-6L20 29v15z" fill="#111827"/>
+  <path d="M44 18h6v28h-6z" fill="#3663f5"/>
+  <circle cx="47" cy="14" r="4" fill="#3663f5"/>
+</svg>

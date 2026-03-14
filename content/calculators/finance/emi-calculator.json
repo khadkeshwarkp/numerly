@@ -1,0 +1,109 @@
+{
+  "id": "emi-calculator",
+  "category": "finance",
+  "slug": "emi-calculator",
+  "keyword": "emi calculator",
+  "seo": {
+    "title": "EMI Calculator | Numerly",
+    "description": "Calculate monthly EMI, total payment, and total interest for fixed-rate installment loans."
+  },
+  "h1": "EMI Calculator",
+  "intro": "Calculate fixed monthly EMI for a loan using amount, annual rate, and term.",
+  "explanation": "EMI is computed using the standard amortization formula for fixed-rate loans with equal monthly payments.",
+  "formula": {
+    "expression": "EMI = P × [r(1 + r)^n] / [(1 + r)^n - 1]",
+    "variables": [
+      {
+        "name": "EMI",
+        "meaning": "Equal monthly installment"
+      },
+      {
+        "name": "P",
+        "meaning": "Loan principal"
+      },
+      {
+        "name": "r",
+        "meaning": "Monthly interest rate"
+      },
+      {
+        "name": "n",
+        "meaning": "Number of months"
+      }
+    ]
+  },
+  "example": {
+    "input": "$500,000 loan, 9% annual interest, 60 months",
+    "steps": [
+      "Convert annual interest rate to monthly rate",
+      "Apply amortization formula",
+      "Multiply EMI by term to get total payment"
+    ],
+    "result": "Output includes monthly EMI, total repayment, and total interest."
+  },
+  "faqs": [
+    {
+      "q": "What is EMI?",
+      "a": "EMI is the fixed monthly payment toward principal and interest."
+    },
+    {
+      "q": "Does EMI change every month?",
+      "a": "For fixed-rate loans, EMI stays constant."
+    },
+    {
+      "q": "Is EMI same as interest-only payment?",
+      "a": "No, EMI includes both interest and principal components."
+    },
+    {
+      "q": "Can I use EMI for car and personal loans?",
+      "a": "Yes, for standard fixed-rate installment structures."
+    },
+    {
+      "q": "Why does lender EMI differ slightly?",
+      "a": "Differences can come from fees, day-count, and rounding methods."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    },
+    {
+      "href": "/finance/mortgage-calculator",
+      "label": "Mortgage Calculator"
+    },
+    {
+      "href": "/finance/compound-interest-calculator",
+      "label": "Compound Interest Calculator"
+    }
+  ],
+  "instructions": [
+    "Convert annual interest rate to monthly rate",
+    "Apply amortization formula",
+    "Multiply EMI by term to get total payment"
+  ],
+  "formulaExplanation": "EMI is computed using the standard amortization formula for fixed-rate loans with equal monthly payments.",
+  "edgeCases": [
+    "Very long terms can significantly increase interest cost.",
+    "Zero or near-zero rates reduce compounding impact.",
+    "Always verify units (monthly vs annual) before interpreting output."
+  ],
+  "practicalTips": [
+    "Compare at least two scenarios before making decisions.",
+    "Use conservative assumptions for rates and growth.",
+    "Review total cost, not just monthly amount."
+  ],
+  "relatedTopics": [
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    },
+    {
+      "href": "/finance/mortgage-calculator",
+      "label": "Mortgage Calculator"
+    },
+    {
+      "href": "/finance/compound-interest-calculator",
+      "label": "Compound Interest Calculator"
+    }
+  ]
+}

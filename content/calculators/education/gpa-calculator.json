@@ -1,0 +1,101 @@
+{
+  "id": "gpa-calculator",
+  "category": "education",
+  "slug": "gpa-calculator",
+  "keyword": "gpa calculator",
+  "seo": {
+    "title": "GPA Calculator | Numerly",
+    "description": "Calculate GPA from course letter grades and credit hours, with optional cumulative GPA support."
+  },
+  "h1": "GPA Calculator",
+  "intro": "Estimate your GPA from course letter grades and credits.",
+  "explanation": "Enter each course grade and credit value. The calculator weights grades by credits and divides total points by total credits. Use the cumulative GPA toggle to include prior GPA and credits.",
+  "formula": {
+    "expression": "GPA = Sum(grade points x credits) / Sum(credits)",
+    "variables": [
+      {
+        "name": "grade points",
+        "meaning": "Numeric value of each letter grade"
+      },
+      {
+        "name": "credits",
+        "meaning": "Credit hours for a course"
+      }
+    ]
+  },
+  "example": {
+    "input": "A in 3 credits, B in 3 credits",
+    "steps": [
+      "Weighted points = (4.0 x 3) + (3.0 x 3) = 21",
+      "Total credits = 6",
+      "GPA = 21 / 6"
+    ],
+    "result": "GPA = 3.50"
+  },
+  "faqs": [
+    {
+      "q": "Is this weighted GPA?",
+      "a": "Yes, by credit hours."
+    },
+    {
+      "q": "Can I add many courses?",
+      "a": "Yes, sum all weighted points and credits."
+    },
+    {
+      "q": "Does this convert percentages to letters?",
+      "a": "Not directly; enter grade points."
+    },
+    {
+      "q": "Can GPA exceed 4.0?",
+      "a": "Only if your system supports weighted scales."
+    },
+    {
+      "q": "Is this official GPA?",
+      "a": "No, official GPA comes from your institution."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/finance/emi-calculator",
+      "label": "EMI Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    },
+    {
+      "href": "/health/bmi-calculator",
+      "label": "BMI Calculator"
+    }
+  ],
+  "instructions": [
+    "Weighted points = (4.0 x 3) + (3.0 x 3) = 21",
+    "Total credits = 6",
+    "GPA = 21 / 6"
+  ],
+  "formulaExplanation": "Add each course grade and credit. GPA equals total weighted points divided by total credits.",
+  "edgeCases": [
+    "Check input units before calculation.",
+    "Boundary values can produce very different outcomes.",
+    "Rounding may cause slight differences from manual estimates."
+  ],
+  "practicalTips": [
+    "Use realistic input ranges.",
+    "Double-check source values before calculating.",
+    "Use related calculators to cross-validate results."
+  ],
+  "relatedTopics": [
+    {
+      "href": "/finance/emi-calculator",
+      "label": "EMI Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    },
+    {
+      "href": "/health/bmi-calculator",
+      "label": "BMI Calculator"
+    }
+  ]
+}

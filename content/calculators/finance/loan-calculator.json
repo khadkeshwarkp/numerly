@@ -1,0 +1,109 @@
+{
+  "id": "loan-calculator",
+  "category": "finance",
+  "slug": "loan-calculator",
+  "keyword": "loan calculator",
+  "seo": {
+    "title": "Loan Calculator: Monthly Payment, Interest & Amortization | Numerly",
+    "description": "Calculate monthly payment, total interest, and total cost using loan amount, annual rate, and term."
+  },
+  "h1": "Loan Calculator",
+  "intro": "Use this loan calculator to estimate monthly payments for fixed-rate loans.",
+  "explanation": "Enter principal, annual rate, and years. The calculator applies standard amortization to return monthly payment, total payment, and total interest.",
+  "formula": {
+    "expression": "M = P x [r(1 + r)^n] / [(1 + r)^n - 1]",
+    "variables": [
+      {
+        "name": "M",
+        "meaning": "Monthly payment"
+      },
+      {
+        "name": "P",
+        "meaning": "Principal"
+      },
+      {
+        "name": "r",
+        "meaning": "Monthly interest rate"
+      },
+      {
+        "name": "n",
+        "meaning": "Number of monthly payments"
+      }
+    ]
+  },
+  "example": {
+    "input": "Principal: $20,000, Rate: 8%, Term: 5 years",
+    "steps": [
+      "r = 0.08 / 12 = 0.006667",
+      "n = 5 x 12 = 60",
+      "Substitute into amortization formula"
+    ],
+    "result": "Monthly payment is about $405.53."
+  },
+  "faqs": [
+    {
+      "q": "What is a loan calculator?",
+      "a": "It estimates monthly payment and total interest for an installment loan."
+    },
+    {
+      "q": "Does this include fees?",
+      "a": "No. It includes principal and interest only."
+    },
+    {
+      "q": "Can I use 0% interest?",
+      "a": "Yes. Payment becomes principal divided by months."
+    },
+    {
+      "q": "Why does lender output differ?",
+      "a": "Lenders may include fees, insurance, or different rounding."
+    },
+    {
+      "q": "Can I use this for auto loans?",
+      "a": "Yes, for fixed-rate installment auto loans."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/finance/mortgage-calculator",
+      "label": "Mortgage Calculator"
+    },
+    {
+      "href": "/finance/emi-calculator",
+      "label": "EMI Calculator"
+    },
+    {
+      "href": "/education/gpa-calculator",
+      "label": "GPA Calculator"
+    }
+  ],
+  "instructions": [
+    "r = 0.08 / 12 = 0.006667",
+    "n = 5 x 12 = 60",
+    "Substitute into amortization formula"
+  ],
+  "formulaExplanation": "Enter principal, annual rate, and years. The calculator applies standard amortization to return monthly payment, total payment, and total interest.",
+  "edgeCases": [
+    "Very long terms can significantly increase interest cost.",
+    "Zero or near-zero rates reduce compounding impact.",
+    "Always verify units (monthly vs annual) before interpreting output."
+  ],
+  "practicalTips": [
+    "Compare at least two scenarios before making decisions.",
+    "Use conservative assumptions for rates and growth.",
+    "Review total cost, not just monthly amount."
+  ],
+  "relatedTopics": [
+    {
+      "href": "/finance/mortgage-calculator",
+      "label": "Mortgage Calculator"
+    },
+    {
+      "href": "/finance/emi-calculator",
+      "label": "EMI Calculator"
+    },
+    {
+      "href": "/education/gpa-calculator",
+      "label": "GPA Calculator"
+    }
+  ]
+}

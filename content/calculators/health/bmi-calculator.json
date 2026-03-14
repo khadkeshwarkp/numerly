@@ -1,0 +1,99 @@
+{
+  "id": "bmi-calculator",
+  "category": "health",
+  "slug": "bmi-calculator",
+  "keyword": "bmi calculator",
+  "seo": {
+    "title": "BMI Calculator | Numerly",
+    "description": "Calculate Body Mass Index using height and weight."
+  },
+  "h1": "BMI Calculator",
+  "intro": "Check your Body Mass Index from your height and weight.",
+  "explanation": "BMI estimates body mass relative to height using kilograms and meters.",
+  "formula": {
+    "expression": "BMI = weight (kg) / [height (m)]^2",
+    "variables": [
+      {
+        "name": "weight",
+        "meaning": "Body weight in kilograms"
+      },
+      {
+        "name": "height",
+        "meaning": "Height in meters"
+      }
+    ]
+  },
+  "example": {
+    "input": "Weight: 70 kg, Height: 1.75 m",
+    "steps": [
+      "Square height: 1.75 x 1.75 = 3.0625",
+      "BMI = 70 / 3.0625"
+    ],
+    "result": "BMI = 22.86"
+  },
+  "faqs": [
+    {
+      "q": "What is BMI?",
+      "a": "A screening metric based on height and weight."
+    },
+    {
+      "q": "Is BMI a diagnosis?",
+      "a": "No, it is a screening indicator."
+    },
+    {
+      "q": "Can athletes have high BMI?",
+      "a": "Yes, muscle mass can raise BMI."
+    },
+    {
+      "q": "Is BMI valid for children?",
+      "a": "Children use age- and sex-specific BMI percentiles."
+    },
+    {
+      "q": "Should I use BMI alone?",
+      "a": "No, use it with other health markers."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/health",
+      "label": "Health Calculators"
+    },
+    {
+      "href": "/education/gpa-calculator",
+      "label": "GPA Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    }
+  ],
+  "instructions": [
+    "Square height: 1.75 x 1.75 = 3.0625",
+    "BMI = 70 / 3.0625"
+  ],
+  "formulaExplanation": "BMI estimates body mass relative to height using kilograms and meters.",
+  "edgeCases": [
+    "Check input units before calculation.",
+    "Boundary values can produce very different outcomes.",
+    "Rounding may cause slight differences from manual estimates."
+  ],
+  "practicalTips": [
+    "Use realistic input ranges.",
+    "Double-check source values before calculating.",
+    "Use related calculators to cross-validate results."
+  ],
+  "relatedTopics": [
+    {
+      "href": "/health",
+      "label": "Health Calculators"
+    },
+    {
+      "href": "/education/gpa-calculator",
+      "label": "GPA Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    }
+  ]
+}

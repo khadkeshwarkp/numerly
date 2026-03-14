@@ -1,0 +1,117 @@
+{
+  "id": "compound-interest-calculator",
+  "category": "finance",
+  "slug": "compound-interest-calculator",
+  "keyword": "compound interest calculator",
+  "seo": {
+    "title": "Compound Interest Calculator | Numerly",
+    "description": "Estimate investment growth with compounding frequency and optional additional deposits."
+  },
+  "h1": "Compound Interest Calculator",
+  "intro": "Estimate long-term investment growth with compounding and optional deposits.",
+  "explanation": "Enter the initial balance, interest rate, time period, and compounding frequency. Use the additional deposits section if you plan to add money each period.",
+  "formula": {
+    "expression": "FV = P(1 + r/n)^(nt) + PMT * [((1 + r/n)^(nt) - 1)/(r/n)]",
+    "variables": [
+      {
+        "name": "FV",
+        "meaning": "Future value"
+      },
+      {
+        "name": "P",
+        "meaning": "Initial principal"
+      },
+      {
+        "name": "r",
+        "meaning": "Annual interest rate"
+      },
+      {
+        "name": "n",
+        "meaning": "Compounds per year"
+      },
+      {
+        "name": "t",
+        "meaning": "Years"
+      },
+      {
+        "name": "PMT",
+        "meaning": "Deposit per period (optional)"
+      }
+    ]
+  },
+  "example": {
+    "input": "$10,000 principal, 8% annual rate, monthly compounding, 10 years",
+    "steps": [
+      "Convert annual rate to periodic rate (r/n)",
+      "Compute growth of principal over nt periods",
+      "Add annuity future value if recurring contributions are entered"
+    ],
+    "result": "Future value shows invested capital and interest growth separately."
+  },
+  "faqs": [
+    {
+      "q": "What is compound interest?",
+      "a": "It is interest earned on both principal and previously earned interest."
+    },
+    {
+      "q": "Does compounding frequency matter?",
+      "a": "Yes. More frequent compounding generally increases future value."
+    },
+    {
+      "q": "Can I add periodic contributions?",
+      "a": "Yes, the calculator includes recurring contribution growth."
+    },
+    {
+      "q": "Is return guaranteed?",
+      "a": "No. Actual returns vary by market conditions and fees."
+    },
+    {
+      "q": "Can I use this for retirement planning?",
+      "a": "Yes, it is useful for long-term savings and retirement projections."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/finance/retirement-calculator",
+      "label": "Retirement Calculator"
+    },
+    {
+      "href": "/finance/inflation-calculator",
+      "label": "Inflation Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    }
+  ],
+  "instructions": [
+    "Convert annual rate to periodic rate (r/n)",
+    "Compute growth of principal over nt periods",
+    "Add annuity future value if recurring contributions are entered"
+  ],
+  "formulaExplanation": "Enter principal, annual return, compounding frequency, contribution amount, and years. The calculator applies standard future value formulas.",
+  "edgeCases": [
+    "Very long terms can significantly increase interest cost.",
+    "Zero or near-zero rates reduce compounding impact.",
+    "Always verify units (monthly vs annual) before interpreting output."
+  ],
+  "practicalTips": [
+    "Compare at least two scenarios before making decisions.",
+    "Use conservative assumptions for rates and growth.",
+    "Review total cost, not just monthly amount."
+  ],
+  "relatedTopics": [
+    {
+      "href": "/finance/retirement-calculator",
+      "label": "Retirement Calculator"
+    },
+    {
+      "href": "/finance/inflation-calculator",
+      "label": "Inflation Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    }
+  ]
+}

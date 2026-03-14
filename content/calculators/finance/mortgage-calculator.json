@@ -1,0 +1,105 @@
+{
+  "id": "mortgage-calculator",
+  "category": "finance",
+  "slug": "mortgage-calculator",
+  "keyword": "mortgage calculator",
+  "seo": {
+    "title": "Mortgage Calculator | Numerly",
+    "description": "Estimate monthly mortgage payment with principal, interest, property tax, and insurance."
+  },
+  "h1": "Mortgage Calculator",
+  "intro": "Estimate monthly mortgage cost including principal, interest, and escrow expenses.",
+  "explanation": "The calculator computes principal and interest using amortization, then adds monthly property tax and home insurance.",
+  "formula": {
+    "expression": "P&I uses amortization; total monthly = principal & interest + (annual tax + annual insurance)/12",
+    "variables": [
+      {
+        "name": "P&I",
+        "meaning": "Monthly principal and interest payment"
+      },
+      {
+        "name": "Escrow",
+        "meaning": "Monthly tax and insurance contribution"
+      },
+      {
+        "name": "Total",
+        "meaning": "P&I plus escrow"
+      }
+    ]
+  },
+  "example": {
+    "input": "$450,000 home, $90,000 down payment, 6.75% APR, 30 years",
+    "steps": [
+      "Loan amount = home price - down payment",
+      "Compute monthly principal and interest",
+      "Add monthly tax and insurance"
+    ],
+    "result": "Result separates P&I from full monthly payment with escrow."
+  },
+  "faqs": [
+    {
+      "q": "Does this include PMI?",
+      "a": "No, PMI is not included unless modeled separately."
+    },
+    {
+      "q": "Is escrow mandatory?",
+      "a": "Many lenders require escrow for taxes and insurance."
+    },
+    {
+      "q": "Can I use this for refinancing?",
+      "a": "Yes, enter refinanced balance as loan amount via home price/down payment."
+    },
+    {
+      "q": "How does down payment affect payment?",
+      "a": "Higher down payment lowers loan amount and monthly cost."
+    },
+    {
+      "q": "Does this use fixed-rate assumptions?",
+      "a": "Yes, this model is for fixed-rate mortgage payments."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/finance/emi-calculator",
+      "label": "EMI Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    },
+    {
+      "href": "/finance/inflation-calculator",
+      "label": "Inflation Calculator"
+    }
+  ],
+  "instructions": [
+    "Loan amount = home price - down payment",
+    "Compute monthly principal and interest",
+    "Add monthly tax and insurance"
+  ],
+  "formulaExplanation": "The calculator computes principal and interest using amortization, then adds monthly property tax and home insurance.",
+  "edgeCases": [
+    "Very long terms can significantly increase interest cost.",
+    "Zero or near-zero rates reduce compounding impact.",
+    "Always verify units (monthly vs annual) before interpreting output."
+  ],
+  "practicalTips": [
+    "Compare at least two scenarios before making decisions.",
+    "Use conservative assumptions for rates and growth.",
+    "Review total cost, not just monthly amount."
+  ],
+  "relatedTopics": [
+    {
+      "href": "/finance/emi-calculator",
+      "label": "EMI Calculator"
+    },
+    {
+      "href": "/finance/loan-calculator",
+      "label": "Loan Calculator"
+    },
+    {
+      "href": "/finance/inflation-calculator",
+      "label": "Inflation Calculator"
+    }
+  ]
+}
