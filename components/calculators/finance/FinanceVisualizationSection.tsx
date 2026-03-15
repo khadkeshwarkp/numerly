@@ -26,12 +26,32 @@ type Props = {
   tableData: CalculatorTableData | null;
 };
 
-const PIE_COLORS = ["#334155", "#64748b", "#94a3b8", "#cbd5e1", "#e2e8f0"];
+const CHART_COLORS = [
+  "hsl(var(--chart-1))",
+  "hsl(var(--chart-2))",
+  "hsl(var(--chart-3))",
+  "hsl(var(--chart-4))",
+  "hsl(var(--chart-5))"
+];
 
 function formatTooltipNumber(value: unknown): string {
   const parsed = typeof value === "number" ? value : Number(value);
   if (!Number.isFinite(parsed)) return "0";
   return parsed.toLocaleString("en-US");
+}
+
+function ChartTooltip({ active, payload }: { active?: boolean; payload?: Array<{ value: number; name: string }> }) {
+  if (!active || !payload?.length) return null;
+  return (
+    <div className="rounded-md border bg-card/95 px-3 py-2 text-xs text-muted-foreground shadow-soft">
+      {payload.map((item) => (
+        <div key={item.name} className="flex items-center justify-between gap-4">
+          <span>{item.name}</span>
+          <span className="font-semibold text-foreground">{formatTooltipNumber(item.value)}</span>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export function FinanceVisualizationSection({ visualization, tableData }: Props) {
@@ -51,12 +71,27 @@ export function FinanceVisualizationSection({ visualization, tableData }: Props)
                   label: point.label ?? point.x,
                   value: point.y
                 }))}
+                margin={{ top: 10, right: 16, left: 0, bottom: 0 }}
               >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="label" tick={{ fontSize: 12 }} />
-                <YAxis tick={{ fontSize: 12 }} />
-                <Tooltip formatter={(value) => formatTooltipNumber(value)} />
-                <Line type="monotone" dataKey="value" stroke="#0f172a" strokeWidth={2} dot={false} />
+                <defs>
+                  <linearGradient id="numerly-line" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stopColor="hsl(var(--chart-2))" />
+                    <stop offset="100%" stopColor="hsl(var(--chart-1))" />
+                  </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="4 6" stroke="hsl(var(--border))" />
+                <XAxis dataKey="label" tick={{ fontSize: 12 }} tickLine={false} axisLine={false} />
+                <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={false} />
+                <Tooltip content={<ChartTooltip />} />
+                <Line
+                  type="monotone"
+                  dataKey="value"
+                  name="Balance"
+                  stroke="url(#numerly-line)"
+                  strokeWidth={2.5}
+                  dot={{ r: 2, strokeWidth: 2, stroke: "hsl(var(--chart-1))", fill: "hsl(var(--background))" }}
+                  activeDot={{ r: 4, strokeWidth: 2 }}
+                />
               </LineChart>
             </ResponsiveContainer>
           </CardContent>
@@ -71,11 +106,17 @@ export function FinanceVisualizationSection({ visualization, tableData }: Props)
           <CardContent className="h-72">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={visualization.barChart.bars}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="label" tick={{ fontSize: 12 }} />
-                <YAxis tick={{ fontSize: 12 }} />
-                <Tooltip formatter={(value) => formatTooltipNumber(value)} />
-                <Bar dataKey="value" fill="#334155" radius={[8, 8, 0, 0]} />
+                <defs>
+                  <linearGradient id="numerly-bar" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stopColor="hsl(var(--chart-3))" />
+                    <stop offset="100%" stopColor="hsl(var(--chart-1))" />
+                  </linearGradient>
+                </defs>
+                <CartesianGrid strokeDasharray="4 6" stroke="hsl(var(--border))" />
+                <XAxis dataKey="label" tick={{ fontSize: 12 }} tickLine={false} axisLine={false} />
+                <YAxis tick={{ fontSize: 12 }} tickLine={false} axisLine={false} />
+                <Tooltip content={<ChartTooltip />} />
+                <Bar dataKey="value" name="Value" fill="url(#numerly-bar)" radius={[8, 8, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>
@@ -91,7 +132,22 @@ export function FinanceVisualizationSection({ visualization, tableData }: Props)
             <div className="h-64 w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
-                  <Tooltip formatter={(value) => formatTooltipNumber(value)} />
+                  <defs>
+                    {visualization.pieChart.slices.map((slice, index) => (
+                      <linearGradient
+                        key={slice.label}
+                        id={`numerly-slice-${index}`}
+                        x1="0"
+                        x2="1"
+                        y1="0"
+                        y2="1"
+                      >
+                        <stop offset="0%" stopColor={CHART_COLORS[index % CHART_COLORS.length]} />
+                        <stop offset="100%" stopColor="hsl(var(--background))" />
+                      </linearGradient>
+                    ))}
+                  </defs>
+                  <Tooltip content={<ChartTooltip />} />
                   <Pie
                     data={visualization.pieChart.slices}
                     dataKey="value"
@@ -102,7 +158,7 @@ export function FinanceVisualizationSection({ visualization, tableData }: Props)
                     innerRadius={38}
                   >
                     {visualization.pieChart.slices.map((slice, index) => (
-                      <Cell key={slice.label} fill={PIE_COLORS[index % PIE_COLORS.length]} />
+                      <Cell key={slice.label} fill={`url(#numerly-slice-${index})`} />
                     ))}
                   </Pie>
                 </PieChart>
@@ -116,7 +172,7 @@ export function FinanceVisualizationSection({ visualization, tableData }: Props)
                 >
                   <span
                     className="h-3 w-3 rounded-full"
-                    style={{ backgroundColor: PIE_COLORS[index % PIE_COLORS.length] }}
+                    style={{ backgroundColor: CHART_COLORS[index % CHART_COLORS.length] }}
                     aria-hidden="true"
                   />
                   <span>{slice.label}</span>

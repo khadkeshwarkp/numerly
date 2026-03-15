@@ -40,6 +40,10 @@ module.exports = {
           foreground: "hsl(var(--destructive-foreground))"
         }
       },
+      fontFamily: {
+        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui"],
+        display: ["var(--font-display)", "ui-sans-serif", "system-ui"]
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
